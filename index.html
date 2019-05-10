@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="CSS/index.css">
+		
+			
+		 <link rel="shortcut icon" href="foto/icon.png" /> 
+		 <title>Centro Cultural</title>
+		
+		<script type="text/javascript">
+			
+			var banners = ["foto/museu/01topo.jpg","foto/museu/02topo.jpg","foto/museu/03topo.jpg", "foto/museu/04topo.jpg", "foto/museu/05topo.jpg"];
+			var bannerAtual = 0;
+
+			function trocaBanner(){
+				if(bannerAtual==banners.length-1){
+					bannerAtual = 0;
+				}else{
+                    bannerAtual++;
+				}
+				document.querySelector('.imgtopo').src = banners[bannerAtual];
+			}
+
+			setInterval(trocaBanner,10000);
+		</script>
+
+	</head>
+		<body style="background-image: url('foto/fundoPagina.jpg');">
+
+			<header>
+					
+					<div class="Barra1">		
+						<ul> 
+							<b>		
+							<li><a href="http://culturabancodobrasil.com.br">CCBB</a></li>
+							
+							<li><a href="#login">Entrar</a></li>
+							
+							<div id="divBusca">
+								<input type="text" id="txtBusca" placeholder="Buscar..."/>
+							</div>
+							</b> 
+						</ul>
+					</div>
+										
+					<img class="imgtopo" src="./foto/museu/01topo.jpg">
+					
+			</header>
+
+		<div class="Barra2">	
+			<ul>
+				<b>
+				<li><a href="#home">Home</a></li>
+				<li><a href="exposicao.html">Exposições</a></li>
+				<li><a href="#eventos">Eventos</a></li>
+				<li><a href="#eventos">Filmes</a></li>
+				<li><a href="#sobre">Comunicação</a></li>
+				</b>
+			</ul>
+		</div>
+		<section class="container inicial">
+			<h1>Centro Cultural Banco do Brasil</h1>
+			<h3></h3>
+			<img src="foto/museu/meio01.jpg">
+			<img src="foto/museu/meio02.jpg">
+			<img src="foto/museu/meio03.jpg">
+			<p><strong>SOBRE O CCBB:</strong><br><br>
+					Desde a fundação do primeiro Centro Cultural em 1989, o Banco do Brasil se posicionou como uma empresa pioneira no investimento em cultura. 
+					<br>
+					A programação dos CCBBs é basicamente definida por meio de editais públicos, divulgados anualmente. Os projetos selecionados no Edital de Patrocínios 
+					Culturais - CCBB, com patrocínio do Banco do Brasil, ou no Edital de Cessão de Espaço obedecem a critérios de seleção, política de atuação e eixo curatorial 
+					previamente estabelecidos.
+					<br>
+					A qualidade, a gratuidade e a regularidade da programação garantiram aos CCBBs o reconhecimento de suas atuações, em forma de diversos prêmios, publicações
+					e reportagens. O crescimento constante de público revela a receptividade que os CCBBs possuem e fazem que suas realizações permaneçam nos rankings das principais 
+					instituições culturais do mundo.
+				</p>
+		</section>
+		
+		
+		
+		<section class="rsocial">
+			<div class="face">
+				<p>
+					<a href="https://pt-br.facebook.com/ccbb.rj/">
+						<img alt="facebook" src="foto/facebook.png">
+					</a>
+				</p>
+				
+			</div>
+
+			<div>
+				<p>
+					<a href="https://www.instagram.com/ccbbrj/?hl=pt-br">
+						<img alt="instagram" src="foto/instagram.png">
+					</a>
+				</p>
+				
+			</div>
+
+			<div>
+				<p>
+					<a href="https://twitter.com/CCBB_RJ">
+						<img alt="twitter" src="foto/twitter.png" >
+					</a>
+				</p>
+			</div>
+			
+			<br><br><br>
+			
+		</section>
+		
+			<div class="infoadi">
+			
+				<footer>
+					<h3>Faça uma visita ao nosso Centro Cultulral</h3>
+					<p>Endereço: R. Primeiro de Março, 66 - Centro, Rio de Janeiro - RJ, 20041-001.</p>
+					
+				</footer>
+					
+			</div>
+		
+
+</body>
+</html>
