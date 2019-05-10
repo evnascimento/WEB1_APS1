@@ -1,0 +1,123 @@
+body {
+	
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+}	
+
+.tema{
+	color: #000080;
+	font-size: 30px;
+	font-family: Algerian, Arial;
+	text-align: center;
+		
+}
+h2{
+	color: #000080;
+	font-size: 40px;
+	font-family: Algerian, Arial;
+	text-align: center;
+	
+}
+
+
+.menu{
+	margin-top: 5px;
+
+}
+
+.menu ul {
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #FFFF40;
+	top: 0;
+	color: #000080;
+}
+
+.menu li a {
+	
+	color: #000080;
+	font-size: 15px;
+	font-family: Arial Black, Colonna MT, Comic Sans MS, Arial;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #F5FFFA;
+}
+
+
+.gallery {
+	border: 1px solid #ccc;
+
+	/*altura da galeria*/
+	margin-left: 15px;
+	margin-top: 3px;
+	
+}
+
+.gallery:hover {
+	border: 1px solid #777;
+}
+
+.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+/*Tamanho da margem imagem*/
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 32%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+		}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*tamanho da imagem*/
+
+.responsive img{
+	width: 328px;
+	height: 250px;
+}
+
+/*Menu do Video*/
+
+.meuvideo {
+	float: right;
+	margin-right: 15px;
+}
+
